@@ -1,0 +1,160 @@
+@import functions
+@import fw_grid_common
++exports("fw_powergate")
+	.map-control
+		background-color: #fff
+		border: 1px solid #ccc
+		box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4)
+		font-family: 'Roboto','sans-serif'
+		margin: 10px
+		display: none
+	#map
+		height: 762px
+		.map-control
+			display: block
+	.selector-control
+		font-size: 14px
+		line-height: 30px
+		padding-left: 5px
+		padding-right: 5px
+	.container
+		width: 1280px
+		margin: 0 auto
+		.wrapper__container
+			.header__wrapper
+				@extend .fw_clear_float_parent
+				position: relative
+				height: 160px
+				.img_wrap__header
+					@extend .fw_col_lg_3s
+					@extend .fw_img_wrap_1st
+					@extend .fw_padding_md_all
+				.nav_wrap__header
+					position: relative
+					@extend .fw_col_lg_7s
+					height: 100%
+					ul
+						position: absolute
+						@extend .fw_god_center
+						width: 80%
+						li
+							list-style-type: none
+							display: inline-block
+							@extend .fw_padding_right_md
+							a
+								color: map-get($fw-color-dark,2)
+								font-size: 1em
+								text-decoration: none
+							&:hover
+								a
+									color: map-get($fw-color-blue,2)
+									text-decoration: none
+		.content__wrapper
+			@extend .fw_clear_float_parent
+			.left__content
+				border: 15px solid map-get($fw-color-blue,2)
+				background-color: map-get($fw-color-blue,5)
+				@extend .fw_padding_sm_all
+				@extend .fw_clear_float_parent
+				.form__left
+					position: relative
+					.item__form
+						@extend .fw_col_lg_4s
+						@extend .fw_padding_sm_all
+						label
+							@extend .fw_padding_top_sm
+							@extend .fw_padding_bottom_sm
+							width: 100%
+							color: #fff
+						input
+							@extend .fw_padding_sm_all
+							width: 100%
+							font-size: 1em
+					.item_button__form
+						@extend .fw_col_lg_2s
+						position: relative
+						@extend .fw_padding_sm_all
+						padding-top: 70px
+						a
+							@extend .classic_btn
+							width: 100%
+							display: block
+							text-transform: uppercase
+							text-align: center
+			.right__content
+				&.pc
+					@extend .fw_col_lg_8
+				.feed_element__right
+					position: relative
+					@extend .fw_padding_xs_all
+					min-height: 160px
+					padding-bottom: 80px
+					div[class^="media_body"],
+					div[class*="media_body"]
+						@extend .fw_padding_xs_all
+						position: absolute
+					.media_body_1st__feed_element
+						top: 25px
+						left: 120px
+						.marker
+							width: 25px
+							height: 25px
+							border-radius: 50%
+							background-color: map-get($fw-color-dark,2)
+							color: #fff
+							text-align: center
+							padding: 6px
+							float: left
+							margin-right: 3px
+							cursor: pointer
+							&.active
+								background-color: map-get($fw-color-hot,1)
+					.media_body_2nd__feed_element
+						top: 25px
+						right: 30%
+					.media_body_3rd__feed_element
+						color: map-get($fw-color-blue,2)
+						text-decoration: underline
+						bottom: 20px
+						right: 28%
+					.media_body_4th__feed_element
+						left: 0
+						bottom: 20px
+						width: 50%
+						p
+							font-style: italic
+							margin-bottom: 0
+							color: map-get($fw-color-dark,2)
+					.decoration
+						color: #fff
+						position: absolute
+						right: 32.5%
+						top: -23%
+						label
+							position: absolute
+							width: 85px
+							height: 25px
+							display: block
+							max-width: none
+							top: 70px
+							left: 170px
+							font-size: 1.5em
+							font-weight: normal
+						&:before
+							content: ''
+							display: block
+							position: absolute
+							width: 0
+							height: 0
+							border-left: 262px solid transparent
+							border-right: 37px solid transparent
+							border-bottom: 100px solid map-get($fw-color-hot,1)
+							transform: rotate(21deg)
+							-webkit-transform: rotate(21deg)
+							-moz-transform: rotate(21deg)
+					.marker_active
+						display: none
+					&:nth-child(odd)
+						background-color: map-get($fw-color-dark,1)
+			.right_map__content
+				@extend .fw_col_lg_4

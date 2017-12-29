@@ -1,0 +1,494 @@
+@import fw_map_get
+@import fw_responsive_device
++exports("fw_grid_common")
+	div[class*="_col_"],
+	div[class^="_col_"]
+		float: left
+	@media #{$fw-min-1024}
+		.fw_container_0th
+			width: 1200px
+			margin: 0 auto
+			position: relative
+		.fw_col_lg_12,
+		.fw_col_lg_10s
+			width: 100%
+			float: left
+		.fw_col_lg_11
+			width: 91.67%
+			float: left
+		.fw_col_lg_9s
+			width: 90%
+			float: left
+		.fw_col_lg_10
+			width: 83.33%
+			float: left
+		.fw_col_lg_8s
+			width: 80%
+			float: left
+		.fw_col_lg_9
+			width: 75%
+			float: left
+		.fw_col_lg_7s
+			width: 70%
+			float: left
+		.fw_col_lg_8
+			width: 66.67%
+			float: left
+		.fw_col_lg_6s
+			width: 60%
+			float: left
+		.fw_col_lg_7
+			width: 58.33%
+			float: left
+		.fw_col_lg_6,
+		.fw_col_lg_5s
+			width: 50%
+			float: left
+		.fw_col_lg_5
+			width: 41.67%
+			float: left
+		.fw_col_lg_4s
+			width: 40%
+			float: left
+		.fw_col_lg_4
+			width: 33.33%
+			float: left
+		.fw_col_lg_3s
+			width: 30%
+			float: left
+		.fw_col_lg_3
+			width: 25%
+			float: left
+		.fw_col_lg_2s
+			width: 20%
+			float: left
+		.fw_col_lg_2
+			width: 16.67%
+			float: left
+		.fw_col_lg_1s
+			width: 10%
+			float: left
+		.fw_col_lg_1
+			width: 8.33%
+			float: left
+
+		// push align left
+		.fw_col_push_left_lg_12,
+		.fw_col_push_left_lg_10s
+			margin-left: 100%
+		.fw_col_push_left_lg_11
+			margin-left: 91.67%
+		.fw_col_push_left_lg_9s
+			margin-left: 90%
+		.fw_col_push_left_lg_10
+			margin-left: 83.33%
+		.fw_col_push_left_lg_8s
+			margin-left: 80%
+		.fw_col_push_left_lg_9
+			margin-left: 75%
+		.fw_col_push_left_lg_7s
+			margin-left: 70%
+		.fw_col_push_left_lg_8
+			margin-left: 66.67%
+		.fw_col_push_left_lg_6s
+			margin-left: 60%
+		.fw_col_push_left_lg_7
+			margin-left: 58.33%
+		.fw_col_push_left_lg_6,
+		.fw_col_push_left_lg_5s
+			margin-left: 50%
+		.fw_col_push_left_lg_5
+			margin-left: 41.67%
+		.fw_col_push_left_lg_4s
+			margin-left: 40%
+		.fw_col_push_left_lg_4
+			margin-left: 33.33%
+		.fw_col_push_left_lg_3s
+			margin-left: 30%
+		.fw_col_push_left_lg_3
+			margin-left: 25%
+		.fw_col_push_left_lg_2s
+			margin-left: 20%
+		.fw_col_push_left_lg_2
+			margin-left: 16.67%
+		.fw_col_push_left_lg_1s
+			margin-left: 10%
+		.fw_col_push_left_lg_1
+			margin-left: 8.33%
+
+		// push align right
+		.fw_col_push_right_lg_12,
+		.fw_col_push_right_lg_10s
+			margin-right: 100%
+		.fw_col_push_right_lg_11
+			margin-right: 91.67%
+		.fw_col_push_right_lg_9s
+			margin-right: 90%
+		.fw_col_push_right_lg_10
+			margin-right: 83.33%
+		.fw_col_push_right_lg_8s
+			margin-right: 80%
+		.fw_col_push_right_lg_9
+			margin-right: 75%
+		.fw_col_push_right_lg_7s
+			margin-right: 70%
+		.fw_col_push_right_lg_8
+			margin-right: 66.67%
+		.fw_col_push_right_lg_6s
+			margin-right: 60%
+		.fw_col_push_right_lg_7
+			margin-right: 58.33%
+		.fw_col_push_right_lg_6,
+		.fw_col_push_right_lg_5s
+			margin-right: 50%
+		.fw_col_push_right_lg_5
+			margin-right: 41.67%
+		.fw_col_push_right_lg_4s
+			margin-right: 40%
+		.fw_col_push_right_lg_4
+			margin-right: 33.33%
+		.fw_col_push_right_lg_3s
+			margin-right: 30%
+		.fw_col_push_right_lg_3
+			margin-right: 25%
+		.fw_col_push_right_lg_2s
+			margin-right: 20%
+		.fw_col_push_right_lg_2
+			margin-right: 16.67%
+		.fw_col_push_right_lg_1s
+			margin-right: 10%
+		.fw_col_push_right_lg_1
+			margin-right: 8.33%
+	@media #{$fw-max-1024}
+		.fw_container_1st
+			width: 1024px
+			margin: 0 auto
+			position: relative
+		.fw_col_md_12,
+		.fw_col_md_10s
+			width: 100%
+			float: left
+		.fw_col_md_11
+			width: 91.67%
+			float: left
+		.fw_col_md_9s
+			width: 90%
+			float: left
+		.fw_col_md_10
+			width: 83.33%
+			float: left
+		.fw_col_md_8s
+			width: 81%
+			float: left
+		.fw_col_md_9
+			width: 75%
+			float: left
+		.fw_col_md_7s
+			width: 70%
+			float: left
+		.fw_col_md_8
+			width: 66.67%
+			float: left
+		.fw_col_md_6s
+			width: 60%
+			float: left
+		.fw_col_md_7
+			width: 58.33%
+			float: left
+		.fw_col_md_6,
+		.fw_col_md_5s
+			width: 50%
+			float: left
+		.fw_col_md_5
+			width: 41.67%
+			float: left
+		.fw_col_md_4s
+			width: 40%
+			float: left
+		.fw_col_md_4
+			width: 33.33%
+			float: left
+		.fw_col_md_3s
+			width: 30%
+			float: left
+		.fw_col_md_3
+			width: 25%
+			float: left
+		.fw_col_md_2s
+			width: 20%
+			float: left
+		.fw_col_md_2
+			width: 16.67%
+			float: left
+		.fw_col_md_1s
+			width: 10%
+			float: left
+		.fw_col_md_1
+			width: 8.33%
+			float: left
+
+		// push align left
+		.fw_col_push_left_md_12,
+		.fw_col_push_left_md_10s
+			margin-left: 100%
+		.fw_col_push_left_md_11
+			margin-left: 91.67%
+		.fw_col_push_left_md_9s
+			margin-left: 90%
+		.fw_col_push_left_md_10
+			margin-left: 83.33%
+		.fw_col_push_left_md_8s
+			margin-left: 80%
+		.fw_col_push_left_md_9
+			margin-left: 75%
+		.fw_col_push_left_md_7s
+			margin-left: 70%
+		.fw_col_push_left_md_8
+			margin-left: 66.67%
+		.fw_col_push_left_md_6s
+			margin-left: 60%
+		.fw_col_push_left_md_7
+			margin-left: 58.33%
+		.fw_col_push_left_md_6,
+		.fw_col_push_left_md_5s
+			margin-left: 50%
+		.fw_col_push_left_md_5
+			margin-left: 41.67%
+		.fw_col_push_left_md_4s
+			margin-left: 40%
+		.fw_col_push_left_md_4
+			margin-left: 33.33%
+		.fw_col_push_left_md_3s
+			margin-left: 30%
+		.fw_col_push_left_md_3
+			margin-left: 25%
+		.fw_col_push_left_md_2s
+			margin-left: 20%
+		.fw_col_push_left_md_2
+			margin-left: 16.67%
+		.fw_col_push_left_md_1s
+			margin-left: 10%
+		.fw_col_push_left_md_1
+			margin-left: 8.33%
+	@media #{$fw-max-800}
+		.fw_container_2nd
+			width: 100%
+	@media #{$fw-max-768}
+		.fw_col_xs_12,
+		.fw_col_xs_10s
+			width: 100%
+			float: left
+			position: relative
+		.fw_col_xs_11
+			width: 91.67%
+			float: left
+		.fw_col_xs_9s
+			width: 90%
+			float: left
+		.fw_col_xs_10
+			width: 83.33%
+			float: left
+		.fw_col_xs_8s
+			width: 80%
+			float: left
+		.fw_col_xs_9
+			width: 75%
+			float: left
+		.fw_col_xs_7s
+			width: 70%
+			float: left
+		.fw_col_xs_8
+			width: 66.67%
+			float: left
+		.fw_col_xs_6s
+			width: 60%
+			float: left
+		.fw_col_xs_7
+			width: 58.33%
+			float: left
+		.fw_col_xs_6,
+		.fw_col_xs_5s
+			width: 50%
+			float: left
+		.fw_col_xs_5
+			width: 41.67%
+			float: left
+		.fw_col_xs_4s
+			width: 40%
+			float: left
+		.fw_col_xs_4
+			width: 33.33%
+			float: left
+		.fw_col_xs_3s
+			width: 30%
+			float: left
+		.fw_col_xs_3
+			width: 25%
+			float: left
+		.fw_col_xs_2s
+			width: 20%
+			float: left
+		.fw_col_xs_2
+			width: 16.67%
+			float: left
+		.fw_col_xs_1s
+			width: 10%
+			float: left
+		.fw_col_xs_1
+			width: 8.33%
+			float: left
+
+		// push align left
+		.fw_col_push_left_xs_12,
+		.fw_col_push_left_xs_10s
+			margin-left: 100%
+		.fw_col_push_left_xs_11
+			margin-left: 91.67%
+		.fw_col_push_left_xs_9s
+			margin-left: 90%
+		.fw_col_push_left_xs_10
+			margin-left: 83.33%
+		.fw_col_push_left_xs_8s
+			margin-left: 80%
+		.fw_col_push_left_xs_9
+			margin-left: 75%
+		.fw_col_push_left_xs_7s
+			margin-left: 70%
+		.fw_col_push_left_xs_8
+			margin-left: 66.67%
+		.fw_col_push_left_xs_6s
+			margin-left: 60%
+		.fw_col_push_left_xs_7
+			margin-left: 58.33%
+		.fw_col_push_left_xs_6,
+		.fw_col_push_left_xs_5s
+			margin-left: 50%
+		.fw_col_push_left_xs_5
+			margin-left: 41.67%
+		.fw_col_push_left_xs_4s
+			margin-left: 40%
+		.fw_col_push_left_xs_4
+			margin-left: 33.33%
+		.fw_col_push_left_xs_3s
+			margin-left: 30%
+		.fw_col_push_left_xs_3
+			margin-left: 25%
+		.fw_col_push_left_xs_2s
+			margin-left: 20%
+		.fw_col_push_left_xs_2
+			margin-left: 16.67%
+		.fw_col_push_left_xs_1s
+			margin-left: 10%
+		.fw_col_push_left_xs_1
+			margin-left: 8.33%
+	@media #{$fw-max-568}
+		.fw_col_xs_12,
+		.fw_col_xs_10s
+			width: 100%
+			float: left
+		.fw_col_xs_11
+			width: 91.67%
+			float: left
+		.fw_col_xs_9s
+			width: 90%
+			float: left
+		.fw_col_xs_10
+			width: 83.33%
+			float: left
+		.fw_col_xs_8s
+			width: 80%
+			float: left
+		.fw_col_xs_9
+			width: 75%
+			float: left
+		.fw_col_xs_7s
+			width: 70%
+			float: left
+		.fw_col_xs_8
+			width: 66.67%
+			float: left
+		.fw_col_xs_6s
+			width: 60%
+			float: left
+		.fw_col_xs_7
+			width: 58.33%
+			float: left
+		.fw_col_xs_6,
+		.fw_col_xs_5s
+			width: 50%
+			float: left
+		.fw_col_xs_5
+			width: 41.67%
+			float: left
+		.fw_col_xs_4s
+			width: 20%
+			float: left
+		.fw_col_xs_4s
+			width: 40%
+			float: left
+		.fw_col_xs_4
+			width: 33.33%
+			float: left
+		.fw_col_xs_3s
+			width: 30%
+			float: left
+		.fw_col_xs_3
+			width: 25%
+			float: left
+		.fw_col_xs_1s
+			width: 20%
+			float: left
+		.fw_col_xs_2
+			width: 16.67%
+			float: left
+		.fw_col_xs_1s
+			width: 10%
+			float: left
+		.fw_col_xs_1
+			width: 8.33%
+			float: left
+
+		// push align left
+		.fw_col_push_left_xs_12,
+		.fw_col_push_left_xs_10s
+			margin-left: 100%
+		.fw_col_push_left_xs_11
+			margin-left: 91.67%
+		.fw_col_push_left_xs_9s
+			margin-left: 90%
+		.fw_col_push_left_xs_10
+			margin-left: 83.33%
+		.fw_col_push_left_xs_8s
+			margin-left: 80%
+		.fw_col_push_left_xs_9
+			margin-left: 75%
+		.fw_col_push_left_xs_7s
+			margin-left: 70%
+		.fw_col_push_left_xs_8
+			margin-left: 66.67%
+		.fw_col_push_left_xs_6s
+			margin-left: 60%
+		.fw_col_push_left_xs_7
+			margin-left: 58.33%
+		.fw_col_push_left_xs_6,
+		.fw_col_push_left_xs_5s
+			margin-left: 50%
+		.fw_col_push_left_xs_5
+			margin-left: 41.67%
+		.fw_col_push_left_xs_4s
+			margin-left: 40%
+		.fw_col_push_left_xs_4
+			margin-left: 33.33%
+		.fw_col_push_left_xs_3s
+			margin-left: 30%
+		.fw_col_push_left_xs_3
+			margin-left: 25%
+		.fw_col_push_left_xs_2s
+			margin-left: 20%
+		.fw_col_push_left_xs_2
+			margin-left: 16.67%
+		.fw_col_push_left_xs_1s
+			margin-left: 10%
+		.fw_col_push_left_xs_1
+			margin-left: 8.33%
+	@media #{$fw-max-320}

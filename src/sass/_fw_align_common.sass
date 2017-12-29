@@ -1,0 +1,450 @@
+// placement of frame
+@import fw_map_get
+@import fw_responsive_device
++exports("fw_ola_align_common")
+	// 	ALIGN VIA OZ AXIS ---------------------------------------------------------------------
+	.fw_index_human
+		z-index: 1
+	.fw_index_warrious
+		z-index: 2
+	.fw_index_general
+		z-index: 3
+	.fw_index_great_general
+		z-index: 4
+	.fw_index_lord
+		z-index: 5
+	.fw_index_root
+		z-index: 9999
+
+	// 	ALIGN TO LEFT ---------------------------------------------------------------------
+	.fw_align_border_box
+		box-sizing: border-box
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		-ms-box-sizing: border-box
+		-o-box-sizing: border-box
+	.fw_align_quater_horizontal
+		-ms-transform: translateX(-50%) translateY(0)
+		-webkit-transform: translate(-50%,0)
+		transform: translate(-50%,0)
+		position: absolute
+		left: 75%
+
+	// 	ALIGN PADDING ---------------------------------------------------------------------
+	.fw_align_vertical_padding_0th
+		padding-top: 25px
+		padding-bottom: 25px
+	.fw_align_vertical_padding_1st
+		padding-top: 78px
+		padding-bottom: 78px
+	.fw_align_vertical_padding_2nd
+		padding-top: 15px
+		padding-bottom: 15px
+	.fw_pushing_padding
+		padding: 100px 0
+	
+	.fw_padding_sxs_all
+		padding: 3px
+	.fw_padding_xs_all
+		padding: 8px
+	.fw_padding_sm_all
+		padding: 15px
+	.fw_padding_md_all
+		padding: 30px
+	.fw_padding_lg_all
+		padding: 48px
+	.fw_padding_lx_all
+		padding: 60px
+
+	.fw_padding_right_xs
+		padding-right: 3px
+	.fw_padding_right_sm
+		padding-right: 15px
+	.fw_padding_right_smd
+		padding-left: 20px
+	.fw_padding_right_md
+		padding-right: 30px
+	.fw_padding_right_lg
+		padding-right: 48px
+	.fw_padding_right_lx
+		padding-right: 60px
+
+	.fw_padding_left_xs
+		padding-left: 3px
+	.fw_padding_left_sm
+		padding-left: 15px
+	.fw_padding_left_smd
+		padding-left: 20px
+	.fw_padding_left_md
+		padding-left: 25px
+	.fw_padding_left_lg
+		padding-left: 48px
+	.fw_padding_left_lx
+		padding-left: 60px
+
+	.fw_padding_top_xs
+		padding-top: 5px
+	.fw_padding_top_sm
+		padding-top: 15px
+	.fw_padding_top_smd
+		padding-top: 28px
+	.fw_padding_top_md
+		padding-top: 25px
+	.fw_padding_top_lg
+		padding-top: 48px
+	.fw_padding_top_lx
+		padding-top: 60px
+
+	.fw_padding_bottom_xs
+		padding-bottom: 5px
+	.fw_padding_bottom_sm
+		padding-bottom: 15px
+	.fw_padding_bottom_smd
+		padding-bottom: 28px
+	.fw_padding_bottom_md
+		padding-bottom: 30px
+	.fw_padding_bottom_lg
+		padding-bottom: 48px
+	.fw_padding_bottom_lx
+		padding-bottom: 60px
+
+	.fw_padding_pc_right_xs
+		padding-right: 1%
+	.fw_padding_pc_right_sm
+		padding-right: 2%
+	.fw_padding_pc_right_smd
+		padding-left: 3%
+	.fw_padding_pc_right_md
+		padding-right: 5%
+	.fw_padding_pc_right_lg
+		padding-right: 7%
+	.fw_padding_pc_right_lx
+		padding-right: 10%
+
+	.fw_padding_pc_left_xs
+		padding-left: 1%
+	.fw_padding_pc_left_sm
+		padding-left: 2%
+	.fw_padding_pc_left_smd
+		padding-left: 3%
+	.fw_padding_pc_left_md
+		padding-left: 5%
+	.fw_padding_pc_left_lg
+		padding-left: 7%
+	.fw_padding_pc_left_lx
+		padding-left: 10%
+
+	.fw_padding_pc_top_xs
+		padding-top: 1%
+	.fw_padding_pc_top_sm
+		padding-top: 2%
+	.fw_padding_pc_top_smd
+		padding-top: 3%
+	.fw_padding_pc_top_md
+		padding-top: 5%
+	.fw_padding_pc_top_lg
+		padding-top: 7%
+	.fw_padding_pc_top_lx
+		padding-top: 10%
+
+	.fw_padding_pc_bottom_xs
+		padding-bottom: 1%
+	.fw_padding_pc_bottom_sm
+		padding-bottom: 2%
+	.fw_padding_pc_bottom_smd
+		padding-bottom: 3%
+	.fw_padding_pc_bottom_md
+		padding-bottom: 5%
+	.fw_padding_pc_bottom_lg
+		padding-bottom: 7%
+	.fw_padding_pc_bottom_lx
+		padding-bottom: 10%
+
+	// 	ALIGN MARGIN ---------------------------------------------------------------------
+	.fw_margin_bottom
+		margin-bottom: 10px
+
+	.fw_margin_xs_all
+		margin: 5px
+	.fw_margin_sm_all
+		margin: 15px
+	.fw_margin_md_all
+		margin: 30px
+	.fw_margin_lg_all
+		margin: 48px
+	.fw_margin_lx_all
+		margin: 60px
+
+	.fw_margin_right_xs
+		margin-right: 5px
+	.fw_margin_right_sm
+		margin-right: 15px
+	.fw_margin_right_smd
+		margin-right: 20px
+	.fw_margin_right_md
+		margin-right: 25px
+	.fw_margin_right_lg
+		margin-right: 48px
+	.fw_margin_right_lx
+		margin-right: 60px
+
+	.fw_margin_left_xs
+		margin-left: 5px
+	.fw_margin_left_sm
+		margin-left: 15px
+	.fw_margin_left_smd
+		margin-left: 20px
+	.fw_margin_left_md
+		margin-left: 25px
+	.fw_margin_left_lg
+		margin-left: 48px
+	.fw_margin_left_lx
+		margin-left: 60px
+	
+	.fw_margin_top_xs
+		margin-top: 5px
+	.fw_margin_top_sm
+		margin-top: 15px
+	.fw_margin_top_smd
+		margin-left: 20px
+	.fw_margin_top_md
+		margin-top: 30px
+	.fw_margin_top_lg
+		margin-top: 48px
+	.fw_margin_top_lx
+		margin-top: 60px
+
+	.fw_margin_bottom_xs
+		margin-bottom: 5px
+	.fw_margin_bottom_sm
+		margin-bottom: 15px
+	.fw_margin_bottom_sm_god
+		margin-bottom: 15px !important
+	.fw_margin_bottom_smd
+		margin-bottom: 20px
+	.fw_margin_bottom_md
+		margin-bottom: 30px
+	.fw_margin_bottom_lg
+		margin-bottom: 48px
+	.fw_margin_bottom_lg_god
+		margin-bottom: 48px !important
+	.fw_margin_bottom_lx
+		margin-bottom: 60px	
+
+	// 	CLEAR
+	.fw_clear
+		clear: both
+	.fw_clear_padding_horizontal
+		padding-left: 0
+		padding-right: 0
+	.fw_clear_float
+		float: none
+	.fw_clear_padding
+		padding-left: 0 !important 
+		padding-right: 0 !important
+		padding-top: 0 !important
+		padding-bottom: 0 !important
+	.fw_clear_margin
+		margin-right: 0 !important
+		margin-left: 0 !important
+		margin-top: 0 !important
+		margin-bottom: 0 !important
+	.fw_clear_all
+		margin-top: 0
+		margin-bottom: 0
+		padding-top: 0
+		padding-bottom: 0
+	.fw_clear_float_parent
+		&:before
+			display: block
+			content: ''
+			clear: both
+		&:after
+			display: block
+			content: ''
+			clear: both
+
+	// 	CENTER ---------------------------------------------------------------------
+	.fw_center_img_vertical
+		display: block
+		width: auto !important
+		height: 100% !important
+	.fw_center_0th
+		display: block
+		margin: 0 auto
+	.fw_center_horizontal_0th
+		margin-left: auto
+		margin-right: auto
+		left: 0
+		right: 0
+		position: absolute
+	.fw_center_horizontal_1st
+		-ms-transform: translateX(-50%) translateY(0)
+		-webkit-transform: translate(-50%,0)
+		transform: translate(-50%,0)
+		position: absolute
+		left: 50%
+	.fw_center_vertical_0th
+		-ms-transform: translateX(0) translateY(-50%)
+		-webkit-transform: translate(0,-50%)
+		transform: translate(0,-50%)
+		position: absolute
+		top: 50%
+	.fw_god_center
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		-webkit-transform: translate(-50%, -50%)
+		-o-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		-moz-transform: translate(-50%, -50%)
+	.fw_remove_center
+		-ms-transform: translateX(0) translateY(0)
+		-webkit-transform: translate(0,0)
+		transform: translate(0, 0)
+		top: 0
+		left: 0
+		position: relative
+	
+	// 	ALIGN IMG ---------------------------------------------------------------------
+	.fw_img_wrap_0th
+		width: 100%
+		img
+			width: 100%
+	.fw_img_wrap_1st
+		position: relative
+		img
+			width: 100%
+	.fw_img_wrap_vertical_0th
+		img
+			height: 100%
+	.fw_img_wrap_vertical_1st
+		text-align: center
+		img
+			vertical-align: middle
+	.fw_img_wrap_vertical_2nd
+		width: 110px
+		height: 110px
+		overflow: hidden
+		img
+			height: 100%
+	.fw_img_wrap_cent
+		position: relative
+		width: 100%
+		height: 100%
+		img
+			width: 100%
+			@extend .fw_god_center
+	div[class^="_img_wrap_"],
+	div[class*="_img_wrap_"]
+		img
+			text-align: center
+			margin: 0 auto
+			display: block
+	.fw_img_wrap_max		
+		img
+			width: 100%
+	.fw_img_wrap_lg
+		img
+			width: 91.67%
+	.fw_img_wrap_smlg
+		img
+			width: 83.33%
+	.fw_img_wrap_md
+		img
+			width: 75%
+	.fw_img_wrap_smmd
+		img
+			width: 66.67%
+	.fw_img_wrap_sm
+		img
+			width: 58.33%
+	.fw_img_wrap_smsm
+		img
+			width: 50%
+	.fw_img_wrap_xs
+		img
+			width: 41.67%
+	.fw_img_wrap_smxs
+		img
+			width: 33.33%
+	.fw_img_wrap_tiny
+		img
+			width: 25%
+	.fw_img_wrap_smti
+		img
+			width: 16.67%
+	// 	ALIGN MEDIA ---------------------------------------------------------------------
+	.fw_media_wrap
+		width: 100%
+		position: relative
+		> *
+			width: 100% !important
+			height: 315px
+	.fw_media_wrap_center
+		width: 100%
+		position: relative
+		height: 315px
+		iframe
+			width: 50%
+			height: 100%
+			margin-left: auto
+			margin-right: auto
+			left: 0
+			right: 0
+			display: block
+	.g-recaptcha
+		width: 100%
+		iframe
+			width: 100%
+			margin: 0 auto
+	.rc-anchor-normal
+		width: auto
+		.rc-anchor-content
+			width: auto
+	.rc-anchor-normal-footer
+		position: absolute
+		right: 1%
+		width: auto
+	.display-span-welc
+		margin-left: 20px!important
+		opacity: 1!important
+	
+	// 	ROUNDING BORDER ---------------------------------------------------------------------
+	.fw_roud_xxs
+		border-radius: 5px
+	.fw_roud_xs
+		border-radius: 8px
+	.fw_roud_sm
+		border-radius: 16px
+	.fw_roud_md
+		border-radius: 18px
+	.fw_roud_lg
+		border-radius: 24px
+	.fw_roud_xl
+		border-radius: 30px
+	.fw_roud_fifty
+		border-radius: 50%
+
+	//  TEXT SIZE
+	@media #{$fw-min-1024}
+		.fw_text_size_xlg_0th
+			font-size: 38px
+		.fw_text_size_xlg_1st
+			font-size: 9pt
+		.fw_text_size_xlg_2nd
+			font-size: 12px
+		.fw_text_size_xlg_3rd
+			font-size: 8px
+		.fw_text_size_xlg_4th
+			font-size: 12pt
+	@media #{$fw-max-1024}
+	@media #{$fw-max-768}
+	
+	// 	TEXT
+	.fw_align_text_vertical_1st
+		text-align: center
+		font-size: 8pt
+		width: 110px
+		min-height: 50px

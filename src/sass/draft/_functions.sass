@@ -1,0 +1,5 @@
+$modules: () !default
+=exports($name)
+	@if not index($modules, $name)
+		$modules: append($modules, $name) !global
+		@content

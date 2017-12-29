@@ -1,0 +1,346 @@
+@import fw_responsive_device
+@import fw_map_get
+@import fw_align_common
++exports("fw_powergate_resposive")
+	@media #{$fw-max-1920}
+	@media #{$fw-max-1920-landscape}
+	@media #{$fw-max-1920-portrait}
+	@media #{$fw-min-1024}
+		.tablet
+			display: none
+		.mobile
+			display: none
+		.pc
+			display: block
+		.container
+			.wrapper__container
+				.img_wrap__header
+	@media #{$fw-max-1024}
+		.pc
+			display: none
+		.mobile
+			display: none
+		.tablet
+			display: block
+		.container
+			width: 100%
+			padding-left: 0
+			padding-right: 0
+			.wrapper__container
+				.header__wrapper
+					position: fixed
+					top: 0
+					left: 0
+					width: 100%
+					height: 60px
+					z-index: 1
+					background-color: map-get($fw-color-blue,1)
+					.img_wrap__header
+						padding: 0
+						height: 100%
+						width: 12.5%
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						-webkit-transform: translate(-50%, -50%)
+						-o-transform: translate(-50%, -50%)
+						-ms-transform: translate(-50%, -50%)
+						-moz-transform: translate(-50%, -50%)
+						img
+							width: auto
+							height: 100%
+					.nav_wrap__header
+						&.tablet
+							position: fixed
+							width: auto
+							right: 0
+							.hamburger_button
+								position: absolute
+								color: #fff
+								font-size: 2em
+								right: 20px
+								top: 16px
+							.nav
+								position: absolute
+								height: 100vh
+								width: 320px
+								top: 60px
+								right: -320px
+								background-color: map-get($fw-color-blue,2)
+								transition: all 300ms	ease
+								-webkit-transition: all 300ms ease
+								-moz-transition: all 300ms ease
+								-ms-transition: all 300ms ease
+								height: 100vh
+								overflow-y: scroll
+								ul
+									width: 100%
+									-ms-transform: translateX(0) translateY(0)
+									-webkit-transform: translate(0,0)
+									transform: translate(0, 0)
+									top: 0
+									left: 0
+									position: relative
+									padding-left: 0
+									li
+										width: 100%
+										padding: 15px
+										border-bottom: 1px solid rgba(255,255,255,0.8)
+										padding-left: 40px
+										a
+											color: #fff
+								&.active
+									right: 0
+			.content__wrapper
+				.left__content
+					width: 38%
+					border: none
+					position: fixed
+					height: 100%
+					background-color: map-get($fw-color-blue,2)
+					h1
+						color: #fff
+						margin-top: 40px
+						margin-bottom: 90px
+					.form__left
+						.item__form
+							width: 100%
+							position: relative
+							float: none
+							label
+								padding: 0
+								position: absolute
+								right: 15px
+								top: -8px
+								text-align: right
+								&.icon
+									width: 80px
+									height: 80px
+									border-radius: 50%
+									background-color: map-get($fw-color-hot,1)
+									color: #fff
+									text-align: center
+									left: 0
+									-ms-transform: translateX(0) translateY(-50%)
+									-webkit-transform: translate(0,-50%)
+									transform: translate(0,-50%)
+									top: 50%
+									i
+										display: block
+										position: absolute
+										font-size: 3em
+										top: 50%
+										left: 50%
+										transform: translate(-50%, -50%)
+										-webkit-transform: translate(-50%, -50%)
+										-o-transform: translate(-50%, -50%)
+										-ms-transform: translate(-50%, -50%)
+										-moz-transform: translate(-50%, -50%)
+								&.notice
+									text-align: center
+									right: auto
+									font-weight: normal
+									margin-top: 53px
+									text-decoration: underline
+							input
+								padding-left: 80px
+							&:first-child
+								margin-bottom: 46px
+						.item_button__form
+							width: 250px
+							float: none
+							margin: 0 auto
+							a
+								height: 60px
+								border: 2px solid map-get($fw-color-hot,1)
+								background-color: #fff
+								text-align: center
+								color: map-get($fw-color-dark,3)
+								line-height: 2
+								font-weight: bold
+								&:hover,
+								&:checked,
+								&:focus
+									color: map-get($fw-color-dark,3)
+				.right__content
+					&.tablet
+						margin-left: 38%
+						margin-top: 60px
+						float: none
+						width: 62%
+						overflow: hidden
+					.feed_element__right
+						div[class^="media_body"],
+						div[class*="media_body"]
+						.media_body_1st__feed_element
+							.marker
+						.media_body_2nd__feed_element
+						.media_body_3rd__feed_element
+						.media_body_4th__feed_element
+							p
+						.decoration
+							right: 42.5%
+							label
+							&:before
+						.marker_active
+							z-index: 2
+						&.active
+							.marker_active
+								display: block
+								position: absolute
+								top: -12.5px
+								left: -12.5px
+								width: 25px
+								height: 25px
+								border-radius: 50%
+								background-color: map-get($fw-color-hot,1)
+								color: #fff
+								text-align: center
+								padding: 6px
+	@media #{$fw-max-1024-landscape}
+	@media #{$fw-max-1024-portrait}
+	@media #{$fw-max-768}
+	@media #{$fw-max-768-landscape}
+	@media #{$fw-max-768-portrait}
+	@media #{$fw-max-568}
+	@media #{$fw-max-568-landscape}
+	@media #{$fw-max-568-portrait}
+	@media #{$fw-max-480}
+	@media #{$fw-max-480-landscape}
+	@media #{$fw-max-480-portrait}
+	@media #{$fw-phone-only-portrait}
+		.pc
+			display: none
+		.tablet
+			display: none
+		.mobile
+			display: block
+		.container
+			.wrapper__container
+				.header__wrapper
+					height: 125px
+					z-index: 2
+					.back_button
+						font-size: 6em
+						position: absolute
+						color: #fff
+						-ms-transform: translateX(0) translateY(-50%)
+						-webkit-transform: translate(0,-50%)
+						transform: translate(0,-50%)
+						top: 50%
+						left: 20px
+					.img_wrap__header
+						width: 30%
+						img
+							width: 100%
+							height: auto
+					.nav_wrap__header
+						&.mobile
+							.hamburger_button
+								font-size: 6em
+							.nav
+								top: 125px
+								width: 100vw
+								right: -100vw
+								height: 100vh
+								overflow-y: scroll
+								ul
+									li
+										padding-top: 30px
+										padding-bottom: 30px
+										a
+											font-size: 4em
+								&.active
+									right: 0
+			.content__wrapper
+				.left__content
+					width: 100%
+					height: 275px
+					top: 125px
+					z-index: 1
+					h1
+					.form__left
+						height: 100%
+						.item__form
+							width: 50%
+							float: left
+							label
+								text-align: center
+								font-size: 2.5em
+								position: relative
+								font-weight: normal
+								p
+								&.icon
+									i
+								&.notice
+							input
+								padding: 20px
+								font-size: 2em
+							&:first-child
+								margin-bottom: 0
+						.item_button__form
+							position: absolute
+							margin-left: auto
+							margin-right: auto
+							left: 0
+							right: 0
+							top: 99px
+							width: 400px
+							a
+								background-color: map-get($fw-color-hot,1)
+								color: #fff
+								font-size: 2em
+								line-height: 1
+				.right__content
+					&.mobile
+						width: 100%
+						margin-left: 0
+						margin-top: 400px
+					.feed_element__right
+						padding: 30px
+						div[class^="media_body"],
+						div[class*="media_body"]
+						> a
+							display: block
+							width: 20%
+							img
+								width: 100%
+						.media_body_1st__feed_element
+							top: 8px
+							left: 25%
+							font-size: 3em
+							.marker
+								width: 52px
+								height: 52px
+						.media_body_2nd__feed_element
+							font-size: 2em
+							left: 25%
+							top: 50%
+							font-style: italic
+						.media_body_3rd__feed_element
+							font-size: 2em
+							top: 60%
+							right: 20%
+						.media_body_4th__feed_element
+							p
+						.decoration
+							right: 27.5%
+							top: -18%
+							label
+								font-size: 2em
+								width: 100px
+								left: 160px
+							&:before
+						.marker_active
+						&.active
+							.marker_active
+					.next_page__right
+						a
+							background-color: map-get($fw-color-dark,1)
+							padding: 36px
+							text-align: center
+							font-size: 3em
+							display: block
+							color: map-get($fw-color-dark,3)
+							text-decoration: underline

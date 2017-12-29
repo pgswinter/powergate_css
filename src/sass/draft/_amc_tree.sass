@@ -1,0 +1,399 @@
+@import common
+@import map-get
++exports("amc_tree")
+	.header
+		height: 300px
+		overflow: hidden
+		@extend .img-wrap
+		background-color: #000
+		margin-bottom: 30px
+		position: relative
+		.wall
+			position: absolute
+			@extend .god-center
+		.top-head
+			position: relative
+			height: 100px
+			background-color: rgba(white, 0.8)
+			border-bottom: 1px solid rgba(black, 0.1)
+			.left-top
+				width: 169px
+				left: 50px
+				position: absolute
+				z-index: 999999999
+				h1
+					margin-top: 0
+					display: block
+					position: relative
+					display: block
+					a
+						@extend .img-wrap
+						padding: 10px 0
+						img
+							@extend .transition-effect
+			&.was-fixed
+				position: fixed
+				top: 0
+				height: 81px
+				width: 100%
+				background-color: rgba(white, 0.5)
+				z-index: 2
+				border-bottom: 1px solid rgba(black, 0.1)
+				.left-top
+					h1
+						a
+							img
+								width: 80%
+			.right-top
+				position: absolute
+				top: 0
+				right: 0
+				height: 100%
+				ul
+					@extend .clear-float
+					height: 100%
+					li
+						float: left
+						height: 100%
+						width: 180px
+						position: relative
+						margin-right: 15px
+						&:last-child
+							padding-right: 0
+						a
+							@extend .set-cent-vert
+							padding: 10px 15px
+							background-color: map-get($amc-color-hot,1)
+							font-family: map-get($amc-font-segoe, 1)
+							border: 2px solid map-get($amc-color-hot,1)
+							color: #fff
+							text-decoration: none
+							@extend .transition-effect
+							text-align: center
+							width: 100%
+							display: block
+							&:hover
+								color: map-get($amc-color-hot,1)
+								border: 2px solid map-get($amc-color-hot,1)
+								background-color: transparent
+	// Header Article Layout ---------------------------------------------------------------------------------------
+	//  -----------------------------------------------------------------------------------------------------
+
+	.head-arti
+		@extend .clear-float
+		.title
+		.head-right
+			margin-top: 20px
+			margin-bottom: 10px
+			float: right
+			.item-lbl,
+			.item
+				float: right
+				text-align: right
+			.item
+				background-color: #fff
+				font-family: map-get($amc-font-segoe,1)
+				text-align: center
+				border-right: 1px solid #cdcdcd
+				cursor: pointer
+				color:  map-get($amc-color-dark,1)
+				&:first-child
+					border-right: none
+		
+	// Article Layout ---------------------------------------------------------------------------------------
+	//  -----------------------------------------------------------------------------------------------------
+
+	.article
+		@extend .clear-float
+		position: relative
+		padding-top: 15px
+		padding-bottom: 15px
+		a
+			text-decoration: none
+			@extend .transition-effect
+			display: block
+			color: #727272
+			border: none
+			@extend .set-bd-sm
+			@extend .pad-sm-all
+			@extend .clear-float
+			position: relative
+			&:hover
+				h2,
+				h3,
+				p
+					text-decoration: underline
+			.wrap-article
+				
+			&.three-col
+				height: 345px
+				.left-article
+					&:before
+						width: 150px
+						height: 150px
+			&.two-col
+				height: 515px
+				.left-article
+					&:before
+						width: 250px
+						height: 250px
+			&.four-col
+				height: 245px
+				.left-article
+					&:before
+						width: 100px
+						height: 100px
+			.left-article
+				@extend .img-wrap
+				height: 100%
+				float: left
+				position: relative
+				width: 40%
+				height: 100%
+				&:before
+					content: ''
+					display: block
+					@extend .set-bd-lg
+					border-color: rgba(white, 0.48)
+					@extend .god-center
+				h2
+					@extend .god-center
+					font-family: map-get($amc-font-segoe,1)
+					font-weight: bold
+					text-align: center
+					text-transform: uppercase
+					font-size: 10pt
+					color: #fff
+				.cover-img
+					width: 100%
+					height: 210px
+					overflow: hidden
+					position: relative
+					img
+						@extend .god-center
+			.right-article
+				float: left
+				width: 60%
+				height: 125px
+				position: relative
+				.aside
+					width: 60%
+					@extend .god-center
+					h2
+						font-size: 10pt
+						text-transform: uppercase
+						height: 50px
+						overflow: hidden
+					p
+						white-space: pre-line
+						font-size: 9pt
+						color: #000
+				h3
+					font-family: map-get($amc-font-segoe,1)
+					font-size: 9pt
+					text-transform: capitalize
+					margin-top: 0
+					color: map-get($amc-color-dark,5)
+					height: 15px
+					overflow: hidden
+		&.land
+			.wrap-article
+				height: auto
+				.left-article
+					width: 100%
+					float: none
+					&:before,
+					h2
+						z-index: 2
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background-color: rgba(black, 0.48)
+				.right-article
+					width: 100%
+					overflow: hidden
+					float: none
+					.aside
+						width: 100%
+						position: relative
+						@extend .kill-god
+		&.rib-left
+			.wrap-article
+				.left-article
+					overflow: visible
+					&:before
+						display: none
+					&:after
+						display: none
+					h2
+						@extend .kill-god
+						background-color: #000
+						padding: 10px 15px
+						position: absolute
+						top: 80%
+						left: -5%
+						text-decoration: none
+		&.no-space
+			@extend .set-bd-xs
+			border-color: #e2e2e2
+			background-color: #fff
+			@extend .transition-effect
+			&:hover
+				background-color: #f0f0f0
+			.wrap-article
+				border: none
+	// Footer -----------------------------------------------------------------------------------------------
+	//  -----------------------------------------------------------------------------------------------------
+
+	.footer
+		margin-top: 30px
+		background-color: map-get($amc-color-dark,1)
+		position: relative
+		.foot-left
+			min-height: 80px
+			padding: 10px 0
+			ul
+				li
+					float: left
+					@extend .img-wrap
+					width: 120px
+					margin-left: 50px
+					&:last-child
+						width: 180px
+		.foot-right
+			position: absolute
+			right: 50px
+			bottom: 5px
+			a
+				font-size: 10pt
+				color: #fff
+				font-family: map-get($amc-font-segoe,1)
+				text-decoration: none
+				&:hover
+					color: map-get($amc-color-hot,1)
+
+	// Detail Layout -----------------------------------------------------------------------------------------------
+	//  -----------------------------------------------------------------------------------------------------
+	.detail-article
+		&.normal
+			.titl-head
+				.cover-img
+					position: relative
+					img
+						@extend .god-center
+				.info-head
+					position: relative
+					@extend .kill-god
+					color: #000
+					margin-bottom: 10px
+					h3
+						font-size: 20pt
+						font-family: map-get($amc-font-segoe,1)
+						text-transform: none
+					h3,
+					h4,
+					nav
+						float: none
+					nav
+						margin-top: 0
+						a
+							color: #e3e3e3
+							padding-left: 0
+							&:first-child
+								i
+									border: none
+									font-size: 20pt
+							i
+								width: 30px
+								height: 30px
+								border: 2px solid
+								border-radius: 50%
+								padding: 0
+								text-align: center
+								line-height: 1.7
+							span
+								margin-left: 5px
+							&.fb
+								color: #3c5a99
+								border-color: #3c5a99
+							&.tw
+								color: #00aced
+								border-color: #00aced
+							&.li
+								color: #1881ba
+								border-color: #1881ba
+							&.go
+								color: #dc503f
+								border-color: #dc503f
+					.right
+						position: absolute
+						right: 0
+						top: 0
+		.titl-head
+			position: relative
+			img
+				@extend .img-wrap
+			.info-head
+				position: absolute
+				@extend .god-center
+				@extend .clear-float
+				color: #fff
+				h3
+					margin-top: 0
+					text-transform: uppercase
+					font-size: 60pt
+					float: left
+				h4
+					margin-top: 0
+					font-size: 10pt
+					float: left
+				nav
+					float: right
+					margin-top: -5px
+					a
+						color: #fff
+						padding: 0 10px
+						font-size: 12pt
+						text-decoration: none
+						i
+							padding-right: 10px
+		.main-content
+			padding: 30px 0
+			max-width: 770px
+			margin: 0 auto
+			ul
+				li
+					list-style-type: disc
+			&.full
+				max-width: 100%
+			p
+				&.lead
+					font-size: 24px
+					line-height: 36px
+					color: map-get($amc-color-dark,5)
+				font-weight: normal
+				line-height: 31px
+				font-size: 17px
+				color: map-get($amc-color-dark,5)
+			label
+				font-family: map-get($amc-font-segoe,1)
+			.attach-file
+				text-decoration: none
+				padding: 5px 15px
+				color: #fff
+				background-color: map-get($amc-color-dark,5)
+				font-family: map-get($amc-font-segoe,1)
+				font-size: 10pt
+				border: 3px solid map-get($amc-color-dark,5)
+				@extend .transition-effect
+				&:hover
+					background-color: transparent
+					border: 3px solid map-get($amc-color-dark,5)
+					color: map-get($amc-color-dark,5)
+
+
